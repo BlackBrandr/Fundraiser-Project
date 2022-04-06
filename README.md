@@ -1,2 +1,3 @@
-# Solidity-Trainings
-My Solidity trainings
+# Fundraiser Project
+
+
