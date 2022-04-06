@@ -1,32 +1,36 @@
 {
-  "name": "@openzeppelin/contracts",
-  "description": "Secure Smart Contract library for Solidity",
-  "version": "4.5.0",
-  "files": [
-    "**/*.sol",
-    "/build/contracts/*.json",
-    "!/mocks/**/*"
-  ],
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "3.2.0",
+    "web3": "^1.6.1",
+    "@openzeppelin/contracts": "^4.5.0",
+    "openzeppelin-solidity": "^4.5.0"
+  },
   "scripts": {
-    "prepare": "bash ../scripts/prepare-contracts-package.sh",
-    "prepare-docs": "cd ..; npm run prepare-docs"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OpenZeppelin/openzeppelin-contracts.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "solidity",
-    "ethereum",
-    "smart",
-    "contracts",
-    "security",
-    "zeppelin"
-  ],
-  "author": "OpenZeppelin Community <maintainers@openzeppelin.org>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/OpenZeppelin/openzeppelin-contracts/issues"
-  },
-  "homepage": "https://openzeppelin.com/contracts/"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
